@@ -25,14 +25,14 @@
 
   
   ## License
-  This application is covered under Apache.
+  This application is covered under Apache license.
   
 
   ## Contributions
-  
+  h
 
   ## Tests
-  
+  h
 
   ## Questions about application
   https://github.com/h

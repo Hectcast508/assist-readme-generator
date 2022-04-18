@@ -8,32 +8,80 @@ const questions = () => {
     {
       type: ' input',
       name: 'github',
-      message: 'Enter your GitHub username. (Required)'
+      message: 'Enter your GitHub username. (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please enter your GitHub Username!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'email',
-      message: 'Enter your email address. (Required)'
+      message: 'Enter your email address. (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please enter your email address!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'title',
-      message: 'What is the name of your project? (Required)'
+      message: 'What is the name of your project? (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please provide a project name!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'description',
-      message: 'Provide a short description explaining the what, why, and how of your project. (Required)'
+      message: 'Provide a short description explaining the what, why, and how of your project. (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please provide a description of your project!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'What are the steps required to install your project? (Required)'
+      message: 'What are the steps required to install your project? (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please provide installation steps!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'Provide instructions and examples for use. (Required)'
+      message: 'Provide instructions and examples for use. (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please provide instructions and examples for use!');
+          return false;
+        }
+      }
     },
     {
       type: 'confirm',
@@ -57,12 +105,28 @@ const questions = () => {
     {
       type: 'input',
       name: 'contributing',
-      message: 'List way that others can contribute to your application. (Required)'
+      message: 'List way that others can contribute to your application. (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please enter ways to contribute to application!');
+          return false;
+        }
+      }
     },
     {
       type: 'input',
       name: 'test',
-      message: 'Is there an example on how to test your application? (Required)'
+      message: 'Is there an example on how to test your application? (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        }else {
+          console.log('Please provide how to test your application!');
+          return false;
+        }
+      }
     }
   ])
 };
