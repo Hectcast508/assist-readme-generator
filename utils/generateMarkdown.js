@@ -15,7 +15,37 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
+  ## Table of Contents
+  -[Description](#description)
+  -[Installation](#installation)
+  -[Usage](#usage)
+  -[License](#license)
+  -[Contributions](#contributions)
+  -[Tests](#tests)
+  -[Questions about application](#questions about application)
+
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## License
+  Application is covered under ${data.license}.
+
+  ## Contributions
+  ${data.contributing}
+
+  ## Tests
+  ${data.test}
+
+  ## Questions about application
+  https://github.com/${data.github}
   
+  For additional question reach me at ${data.email}
 
 `;
 }
