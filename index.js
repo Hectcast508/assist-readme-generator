@@ -36,11 +36,23 @@ const questions = () => {
       message: 'Provide instructions and examples for use. (Required)'
     },
     {
+      type: 'confirm',
+      name: 'confirmLicense',
+      message: 'Does your project have a license?',
+      default: true
+    },
+    {
       type: 'list',
       name: 'license',
       message: 'Choose a license for your project.',
       choices: ['Apache', 'GNU', 'MIT', 'ISC'],
-      default: false
+      when: ({confirmLicense}) => {
+        if (confirmLicense) {
+          return true;
+        }else {
+          return false;
+        }
+      }
     },
     {
       type: 'input',
@@ -57,7 +69,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile('README.md', generatePage(fileName, data), err => {
+  fs.writeFile('./dist/README.md', generatePage(fileName, data), err => {
     if (err) throw err;
     console.log('README file complete!');
   });

@@ -1,53 +1,67 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+const renderLicenseBadge = license => {
+  if (!license) {
+    return '';
+  }
+  return`
+  ![Badge](https://img.shields.io/badge/License-${license}-blue)
+  `;
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const renderLicenseSection = license => {
+  if (!license) {
+    return '';
+  }
+  return`
+  ## License
+  This application is covered under ${license} license.
+  `;
+}; 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+module.exports = generateMarkdown => {
+
+  const {license, ...header} = generateMarkdown;
+
   return `
-  # ${data.title}
+  # ${header.title}
+
+  ${renderLicenseBadge(license)}
 
   ## Table of Contents
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[License](#license)
-  -[Contributions](#contributions)
-  -[Tests](#tests)
-  -[Questions about application](#questions about application)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Questions about application](#questions-about-application)
 
   ## Description
-  ${data.description}
+  ${header.description}
 
   ## Installation
-  ${data.installation}
+  ${header.installation}
 
   ## Usage
-  ${data.usage}
+  ${header.usage}
 
-  ## License
-  Application is covered under ${data.license}.
+  ${renderLicenseSection(license)}
 
   ## Contributions
-  ${data.contributing}
+  ${header.contributing}
 
   ## Tests
-  ${data.test}
+  ${header.test}
 
   ## Questions about application
-  https://github.com/${data.github}
+  https://github.com/${header.github}
   
-  For additional question reach me at ${data.email}
+  For additional question reach me at ${header.email}
 
 `;
 }
 
-module.exports = generateMarkdown;
