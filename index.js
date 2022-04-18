@@ -132,6 +132,7 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
+// function that writes README file to the dist folder, takes the generateMarkdown file as the README.
 function writeToFile(fileName, data) {
   fs.writeFile('./dist/README.md', generatePage(fileName, data), err => {
     if (err) throw err;
@@ -140,6 +141,7 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
+// function that call the question function then calls the writetofile function.
 function init() {
   questions()
     .then(writeToFile);

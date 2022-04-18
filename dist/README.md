@@ -2,7 +2,7 @@
   # h
 
   
-  ![Badge](https://img.shields.io/badge/License-Apache-blue)
+  ![Badge](https://img.shields.io/badge/License-MIT-blue)
   
 
   ## Table of Contents
@@ -25,7 +25,7 @@
 
   
   ## License
-  This application is covered under Apache license.
+  This application is covered under MIT license.
   
 
   ## Contributions
@@ -35,7 +35,7 @@
   h
 
   ## Questions about application
-  https://github.com/h
+  https://github.com/Hector
   
   For additional question reach me at h
 
