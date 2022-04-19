@@ -11,7 +11,7 @@
   - [Questions about application](#questions-about-application)
 
   ## Description
-  Takes the users input of their information, then generates the readme file.
+  A simple application that will assist you in making your README file. All you need is the project information on hand and let the README generator do the rest.
 
   ## Built 
   - Node.js
@@ -23,13 +23,9 @@
 
   ## Usage
   In the command line type node index.js, then fill out the question that are presented and readme file is generated.
-
-  ## Contributions
   
-
   ## Tests
   
-
   ## Questions about application
   https://github.com/Hectcast508
   

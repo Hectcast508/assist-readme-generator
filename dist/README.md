@@ -2,14 +2,12 @@
   # h
 
   
-  ![Badge](https://img.shields.io/badge/License-MIT-blue)
-  
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  
   - [Contributions](#contributions)
   - [Tests](#tests)
   - [Questions about application](#questions-about-application)
@@ -24,9 +22,6 @@
   h
 
   
-  ## License
-  This application is covered under MIT license.
-  
 
   ## Contributions
   h
@@ -35,7 +30,7 @@
   h
 
   ## Questions about application
-  https://github.com/Hector
+  https://github.com/h
   
   For additional question reach me at h
 

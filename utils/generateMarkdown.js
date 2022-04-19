@@ -9,6 +9,14 @@ const renderLicenseBadge = license => {
   `;
 };
 
+//Create function that returns the license link in README.
+const renderLicenseLink = license => {
+  if (!license) {
+    return '';
+  }
+  return`- [License](#license)`
+};
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
@@ -35,7 +43,7 @@ module.exports = generateMarkdown => {
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  ${renderLicenseLink(license)}
   - [Contributions](#contributions)
   - [Tests](#tests)
   - [Questions about application](#questions-about-application)
