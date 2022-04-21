@@ -27,6 +27,7 @@
   ![READMEdemo](./assets/READMEdemo.gif)
   
   ## Tests
+  node index.js then fill out questions.
   
   ## Questions about application
   https://github.com/Hectcast508
