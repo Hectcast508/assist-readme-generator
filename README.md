@@ -24,6 +24,8 @@
   ## Usage
   In the command line type node index.js, then fill out the question that are presented and readme file is generated.
   
+  ![READMEdemo](./assets/READMEdemo.gif)
+  
   ## Tests
   
   ## Questions about application
